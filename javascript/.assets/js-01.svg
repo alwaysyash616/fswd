@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#222"/></marker></defs>
+<rect width="1200" height="850" fill="white"/>
+
+<!-- Global Execution Context -->
+<rect x="150" y="110" width="900" height="650" fill="none" stroke="#222" stroke-width="4"/>
+<text x="1070" y="450" font-family="Arial, sans-serif" font-size="34" font-weight="600">GEC</text>
+
+<!-- Labels -->
+<text x="95" y="350" font-family="Arial, sans-serif" font-size="30" font-weight="600" transform="rotate(-90 95 350)">Call Stack</text>
+<text x="1110" y="350" font-family="Arial, sans-serif" font-size="30" font-weight="600" transform="rotate(90 1110 350)">Heap</text>
+
+<!-- Call Stack -->
+<rect x="220" y="170" width="350" height="530" fill="none" stroke="#222" stroke-width="4"/>
+
+<!-- Thread -->
+<path d="M395 40 L395 105 L395 170" fill="none" stroke="#222" stroke-width="4"/>
+<text x="365" y="32" font-family="Arial, sans-serif" font-size="30" font-weight="600">Thread</text>
+
+<!-- Execution contexts -->
+<rect x="260" y="205" width="270" height="100" fill="none" stroke="#222" stroke-width="4"/>
+<text x="395" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="38">F4</text>
+
+<rect x="260" y="320" width="270" height="100" fill="none" stroke="#222" stroke-width="4"/>
+<text x="395" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="38">F3</text>
+
+<rect x="260" y="435" width="270" height="100" fill="none" stroke="#222" stroke-width="4"/>
+<text x="395" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="38">F2</text>
+
+<!-- Bottommost Global Execution Context -->
+<rect x="245" y="550" width="300" height="120" fill="none" stroke="#222" stroke-width="4"/>
+<text x="395" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Global Execution Context</text>
+<rect x="270" y="600" width="65" height="45" fill="none" stroke="#222" stroke-width="3"/>
+<text x="302" y="632" text-anchor="middle" font-family="Arial, sans-serif" font-size="28">A</text>
+<rect x="360" y="600" width="65" height="45" fill="none" stroke="#222" stroke-width="3"/>
+<text x="392" y="632" text-anchor="middle" font-family="Arial, sans-serif" font-size="28">B</text>
+<rect x="450" y="600" width="65" height="45" fill="none" stroke="#222" stroke-width="3"/>
+<text x="482" y="632" text-anchor="middle" font-family="Arial, sans-serif" font-size="28">F2</text>
+
+<!-- Heap -->
+<rect x="660" y="170" width="320" height="530" fill="none" stroke="#222" stroke-width="4"/>
+<rect x="745" y="330" width="150" height="110" fill="none" stroke="#222" stroke-width="4"/>
+<text x="820" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="28">Function</text>
+<text x="820" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="25">Object (F2)</text>
+
+<!-- F2 reference to heap function object -->
+<path d="M515 622 C590 622, 630 520, 745 410" fill="none" stroke="#222" stroke-width="4" marker-end="url(#arrow)"/>
+</svg>

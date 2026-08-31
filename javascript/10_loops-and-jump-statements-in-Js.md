@@ -19,6 +19,32 @@ flowchart TD
     F -.-> |technically| O
     A -.-> |technically| O
 ```
+### How to make object in JS?
+```js
+let x = {
+    name: "Yash",
+    age: 24,
+    salary: '$180,000'
+}
+console.log(x)
+```
+### Access individual properties/values
+```js
+// ---------I---------
+console.log(x.name);
+console.log(x.age);
+// ---II (more powerful, better way)---
+console.log(x['name']);
+console.log(x['age']);
+```
+### Why `typeof [2,4,5]` is an object?
+> what if keys? are numbers? - 0, 1, 2 ...  
+> Then,  
+> console.log(obj.0) `❌`  
+> console.log(obj.1) `❌`  
+> `console.log(obj['0'])` `✅`(like this will work)  
+> but  
+> `console.log(obj[0])`  `✅` is more convenient  
 
 # Loops and Jump statements
 ```mermaid
@@ -129,6 +155,12 @@ Output:
 - **All iterables are objects.**
 - Arrays, functions & objects are objects.
 - Therefore, an **array** can be used with both `for-in` and `for-of`.
+> Array is special object in which _property names_ **(keys)** are 0,1,2,3...  
+> `obj[0]` `✅`_(more convenient)_  
+> but  
+> `obj['0']` `✅`_(will work)_  
+> _in fact_
+> _it is the actual way to access object individual elements, by writing keys in quotation in square brackets_
 
 ```js
 let a = [11, 22, 33, 44];
